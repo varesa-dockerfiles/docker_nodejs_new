@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "root:$ROOTPWD" | chpasswd 
-echo "user:$USERPWD" | chpasswd
+echo "$USER:$USERPWD" | chpasswd
 
 ip a | grep inet
 
